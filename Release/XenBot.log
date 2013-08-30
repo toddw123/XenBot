@@ -1,0 +1,31 @@
+﻿Build started 8/29/2013 10:44:42 PM.
+     1>Project "C:\Users\Todd\Documents\Visual Studio 2012\Projects\Find\XenBot\XenBot.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D XENBOT_EXPORTS /D _WINDLL /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt UnitMap.cpp main.cpp
+         UnitMap.cpp
+     1>UnitMap.cpp(228): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(218) : see declaration of 'fopen'
+         main.cpp
+     1>c:\users\todd\documents\visual studio 2012\projects\find\xenbot\Player.h(106): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+     1>main.cpp(22): warning C4273: 'UnhandledExceptionFilter' : inconsistent dll linkage
+                 C:\Program Files (x86)\Windows Kits\8.0\Include\um\errhandlingapi.h(92) : see previous definition of 'UnhandledExceptionFilter'
+     1>main.cpp(23): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(218) : see declaration of 'fopen'
+     1>main.cpp(72): warning C4273: 'DllMain' : inconsistent dll linkage
+                 c:\users\todd\documents\visual studio 2012\projects\find\xenbot\main.h(78) : see previous definition of 'DllMain'
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Todd\Documents\Visual Studio 2012\Projects\Find\Release\XenBot.dll" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Todd\Documents\Visual Studio 2012\Projects\Find\Release\XenBot.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Todd\Documents\Visual Studio 2012\Projects\Find\Release\XenBot.lib" /MACHINE:X86 /SAFESEH /DLL Release\main.obj
+         Release\Packet.obj
+         Release\Player.obj
+         Release\UnitMap.obj
+            Creating library C:\Users\Todd\Documents\Visual Studio 2012\Projects\Find\Release\XenBot.lib and object C:\Users\Todd\Documents\Visual Studio 2012\Projects\Find\Release\XenBot.exp
+         Generating code
+         Finished generating code
+     1>detours.lib(detours.obj) : warning LNK4099: PDB 'detours.pdb' was not found with 'detours.lib(detours.obj)' or at 'C:\Users\Todd\Documents\Visual Studio 2012\Projects\Find\Release\detours.pdb'; linking object as if no debug info
+     1>detours.lib(disasm.obj) : warning LNK4099: PDB 'detours.pdb' was not found with 'detours.lib(disasm.obj)' or at 'C:\Users\Todd\Documents\Visual Studio 2012\Projects\Find\Release\detours.pdb'; linking object as if no debug info
+         XenBot.vcxproj -> C:\Users\Todd\Documents\Visual Studio 2012\Projects\Find\Release\XenBot.dll
+     1>Done Building Project "C:\Users\Todd\Documents\Visual Studio 2012\Projects\Find\XenBot\XenBot.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.55

@@ -1,0 +1,101 @@
+﻿Build started 8/29/2013 10:43:03 PM.
+     1>Project "C:\Users\Todd\Documents\Visual Studio 2012\Projects\Find\XenBot\XenBot.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D XENBOT_EXPORTS /D _WINDLL /Gm /RTC1 /MDd /GS- /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp Packet.cpp Player.cpp UnitMap.cpp
+         UnitMap.cpp
+     1>c:\users\todd\documents\visual studio 2012\projects\find\xenbot\unitmap.cpp(29): warning C4509: nonstandard extension used: 'UnitMap::SetAllOutOfRange' uses SEH and 'iter' has destructor
+                 c:\users\todd\documents\visual studio 2012\projects\find\xenbot\unitmap.cpp(26) : see declaration of 'iter'
+     1>c:\users\todd\documents\visual studio 2012\projects\find\xenbot\unitmap.cpp(211): warning C4509: nonstandard extension used: 'UnitMap::CleanUnits' uses SEH and 'end' has destructor
+                 c:\users\todd\documents\visual studio 2012\projects\find\xenbot\unitmap.cpp(202) : see declaration of 'end'
+     1>c:\users\todd\documents\visual studio 2012\projects\find\xenbot\unitmap.cpp(211): warning C4509: nonstandard extension used: 'UnitMap::CleanUnits' uses SEH and 'start' has destructor
+                 c:\users\todd\documents\visual studio 2012\projects\find\xenbot\unitmap.cpp(201) : see declaration of 'start'
+     1>c:\users\todd\documents\visual studio 2012\projects\find\xenbot\unitmap.cpp(211): warning C4509: nonstandard extension used: 'UnitMap::CleanUnits' uses SEH and 'iter' has destructor
+                 c:\users\todd\documents\visual studio 2012\projects\find\xenbot\unitmap.cpp(200) : see declaration of 'iter'
+     1>c:\users\todd\documents\visual studio 2012\projects\find\xenbot\unitmap.cpp(228): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : see declaration of 'fopen'
+     1>c:\users\todd\documents\visual studio 2012\projects\find\xenbot\unitmap.cpp(243): warning C4509: nonstandard extension used: 'UnitMap::OutputUnitMap' uses SEH and 'iter' has destructor
+                 c:\users\todd\documents\visual studio 2012\projects\find\xenbot\unitmap.cpp(238) : see declaration of 'iter'
+     1>c:\users\todd\documents\visual studio 2012\projects\find\xenbot\unitmap.cpp(275): warning C4509: nonstandard extension used: 'UnitMap::LocateUnit' uses SEH and 'iter' has destructor
+                 c:\users\todd\documents\visual studio 2012\projects\find\xenbot\unitmap.cpp(267) : see declaration of 'iter'
+     1>c:\users\todd\documents\visual studio 2012\projects\find\xenbot\unitmap.cpp(277): warning C4509: nonstandard extension used: 'UnitMap::LocateUnit' uses SEH and 'iter' has destructor
+                 c:\users\todd\documents\visual studio 2012\projects\find\xenbot\unitmap.cpp(267) : see declaration of 'iter'
+     1>c:\users\todd\documents\visual studio 2012\projects\find\xenbot\unitmap.cpp(315): warning C4509: nonstandard extension used: 'UnitMap::UnitsAlive' uses SEH and 'iter' has destructor
+                 c:\users\todd\documents\visual studio 2012\projects\find\xenbot\unitmap.cpp(309) : see declaration of 'iter'
+     1>c:\program files (x86)\microsoft visual studio 11.0\vc\include\list(728): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\list(725) : while compiling class template member function 'std::_List_alloc<_Al_has_storage,_Alloc_types>::_List_alloc(const std::allocator<_Ty> &)'
+                 with
+                 [
+                     _Al_has_storage=false,
+                     _Alloc_types=std::_List_base_types<std::pair<const int,Unit *>,std::allocator<std::pair<const int,Unit *>>>,
+                     _Ty=std::pair<const int,Unit *>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\list(829) : see reference to function template instantiation 'std::_List_alloc<_Al_has_storage,_Alloc_types>::_List_alloc(const std::allocator<_Ty> &)' being compiled
+                 with
+                 [
+                     _Al_has_storage=false,
+                     _Alloc_types=std::_List_base_types<std::pair<const int,Unit *>,std::allocator<std::pair<const int,Unit *>>>,
+                     _Ty=std::pair<const int,Unit *>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\list(820) : see reference to class template instantiation 'std::_List_alloc<_Al_has_storage,_Alloc_types>' being compiled
+                 with
+                 [
+                     _Al_has_storage=false,
+                     _Alloc_types=std::_List_base_types<std::pair<const int,Unit *>,std::allocator<std::pair<const int,Unit *>>>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\list(870) : see reference to class template instantiation 'std::_List_buy<_Ty,_Alloc>' being compiled
+                 with
+                 [
+                     _Ty=std::pair<const int,Unit *>,
+                     _Alloc=std::allocator<std::pair<const int,Unit *>>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\xhash(275) : see reference to class template instantiation 'std::list<_Ty,_Alloc>' being compiled
+                 with
+                 [
+                     _Ty=std::pair<const int,Unit *>,
+                     _Alloc=std::allocator<std::pair<const int,Unit *>>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\hash_map(86) : see reference to class template instantiation 'std::_Hash<_Traits>' being compiled
+                 with
+                 [
+                     _Traits=stdext::_Hmap_traits<int,Unit *,stdext::hash_compare<int,std::less<int>>,std::allocator<std::pair<const int,Unit *>>,false>
+                 ]
+                 c:\users\todd\documents\visual studio 2012\projects\find\xenbot\unitmap.h(69) : see reference to class template instantiation 'stdext::hash_map<_Kty,_Ty>' being compiled
+                 with
+                 [
+                     _Kty=int,
+                     _Ty=Unit *
+                 ]
+         Player.cpp
+     1>c:\users\todd\documents\visual studio 2012\projects\find\xenbot\player.h(106): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+         Packet.cpp
+         main.cpp
+     1>c:\users\todd\documents\visual studio 2012\projects\find\xenbot\player.h(106): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+     1>c:\users\todd\documents\visual studio 2012\projects\find\xenbot\main.cpp(22): warning C4273: 'UnhandledExceptionFilter' : inconsistent dll linkage
+                 c:\program files (x86)\windows kits\8.0\include\um\errhandlingapi.h(92) : see previous definition of 'UnhandledExceptionFilter'
+     1>c:\users\todd\documents\visual studio 2012\projects\find\xenbot\main.cpp(23): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : see declaration of 'fopen'
+     1>c:\users\todd\documents\visual studio 2012\projects\find\xenbot\main.cpp(73): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\time.inl(112) : see declaration of 'localtime'
+     1>c:\users\todd\documents\visual studio 2012\projects\find\xenbot\main.cpp(78): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : see declaration of 'strcpy'
+     1>c:\users\todd\documents\visual studio 2012\projects\find\xenbot\main.cpp(85): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>c:\users\todd\documents\visual studio 2012\projects\find\xenbot\main.cpp(91): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>c:\users\todd\documents\visual studio 2012\projects\find\xenbot\main.cpp(147): warning C4273: 'DllMain' : inconsistent dll linkage
+                 c:\users\todd\documents\visual studio 2012\projects\find\xenbot\main.h(82) : see previous definition of 'DllMain'
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Todd\Documents\Visual Studio 2012\Projects\Find\Debug\XenBot.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Todd\Documents\Visual Studio 2012\Projects\Find\Debug\XenBot.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Todd\Documents\Visual Studio 2012\Projects\Find\Debug\XenBot.lib" /MACHINE:X86 /DLL Debug\main.obj
+         Debug\Packet.obj
+         Debug\Player.obj
+         Debug\UnitMap.obj
+            Creating library C:\Users\Todd\Documents\Visual Studio 2012\Projects\Find\Debug\XenBot.lib and object C:\Users\Todd\Documents\Visual Studio 2012\Projects\Find\Debug\XenBot.exp
+     1>detours.lib(detours.obj) : warning LNK4099: PDB 'detours.pdb' was not found with 'detours.lib(detours.obj)' or at 'C:\Users\Todd\Documents\Visual Studio 2012\Projects\Find\Debug\detours.pdb'; linking object as if no debug info
+     1>detours.lib(disasm.obj) : warning LNK4099: PDB 'detours.pdb' was not found with 'detours.lib(disasm.obj)' or at 'C:\Users\Todd\Documents\Visual Studio 2012\Projects\Find\Debug\detours.pdb'; linking object as if no debug info
+         XenBot.vcxproj -> C:\Users\Todd\Documents\Visual Studio 2012\Projects\Find\Debug\XenBot.dll
+     1>Done Building Project "C:\Users\Todd\Documents\Visual Studio 2012\Projects\Find\XenBot\XenBot.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:06.18
