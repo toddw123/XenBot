@@ -5,26 +5,12 @@
 typedef int (__cdecl* tUL)();
 tUL g_updateLightHook = (tUL)0x431A00;
 
-float* LocX = (float*)0x10F9D04;
-float* LocY = (float*)0x24CC578;
-
-int start = 1;
-
 int __cdecl UpdateLightHook()
 {
    int ret = g_updateLightHook();
    float* test = (float*)0x2EE9670;
    *test = 1;
    return ret;
-}
-
-LONG WINAPI UnhandledExceptionFilter(_EXCEPTION_POINTERS *ExceptionInfo)
-{
-	FILE* out = fopen("errors.log", "a+");
-	fprintf(out, "Error!\n");
-	fclose(out);
-
-	return EXCEPTION_CONTINUE_SEARCH;
 }
 
 Player *plr;
